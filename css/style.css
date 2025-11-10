@@ -1,0 +1,29 @@
+/* Власні стилі, які доповнюють bootstrap.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1; /* дозволяє центральній частині розтягуватися */
+}
+
+/* роблю іконки у навігації та кнопках акуратнішими */
+.navbar-brand i,
+.nav-link i,
+.btn i,
+.list-group-item i {
+    margin-right: 5px; /* відступ для іконок */
+}
+
+/* Стилі для іконок футера */
+footer .fa {
+    font-size: 1.5rem; 
+    transition: opacity 0.2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: none;
+    opacity: 0.8; 
+}
